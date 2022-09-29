@@ -76,30 +76,37 @@ public class CentroDistribuicao {
 	public int[] encomendaCombustivel(int qtdade, TIPOPOSTO tipoPosto) {
 		if (qtdade < 0) return new int {-7};
 		switch (getSituacao()){
-			case NORMAL: return entregaNPorCento(100);
+			case NORMAL: return entregaNPorCento(qtdade, 100);
 			case SOBRAVISO: {
 				switch(TIPOPOSTO){
-					COMUM: return entregaNPorCento(50);
-					ESTRATEGICO: return entregaNPorCento(100);
+					COMUM: return entregaNPorCento(qtdade, 50);
+					ESTRATEGICO: return entregaNPorCento(qtade, 100);
 				}
 			}
 			case EMERGENCIA: {
 				switch(TIPOPOSTO){
 					COMUM: return new int {-14};
-					ESTRATEGICO: return entregaNPorCento(50);
+					ESTRATEGICO: return entregaNPorCento(qtdade, 50);
 				}
 			}
 		}
 	}
 
-	public int[] entregaNPorCento(int n){
-		// Criar caso onde a mistura não pode ser feita
-		this.tAditivo -= qtdade * 100 / 100 * 5 / 100 * n / 100;
-		this.tGasolina -= qtdade * 100 / 100 * 70 / 100 * n / 100;
-		this.tAlcool1 -= qtdade * 100 / 2 / 100 * 25 / 100 * n / 100;
-		this.tAlcool2 -= qtdade * 100 / 2 / 100 * 70 / 100 * n / 100;
-		defineSituacao();
-		return new int {this.tAditivo, this.tGasolina, this.tAlcool1, this.tAlcool2};
+	public int[] entregaNPorCento(int qtdade, int n){
+		// REVISAR
+		// revisar especialmente como se trata da divisão de alcool em 2, já que (25 / 2) tem uma casa decimal diferente de zero
+		if (tAditivo - (qtdade / 100 * 5) >= 0
+			&& tGasolina - (qtdade / 100 * 70) >= 0
+			&& tAlcool1 - (qtdade * 10 / 2 / 10 / 100 * 25) >= 0
+			&& tAlcool2 - (qtdade * 10 / 2 / 10 / 100 * 25) >= 0){
+			this.tAditivo -= qtdade * 100 / 100 * 5 / 100 * n / 100;
+			this.tGasolina -= qtdade * 100 / 100 * 70 / 100 * n / 100;
+			this.tAlcool1 -= qtdade * 100 / 2 / 100 * 25 / 100 * n / 100;
+			this.tAlcool2 -= qtdade * 100 / 2 / 100 * 70 / 100 * n / 100;
+			defineSituacao();
+			return new int {this.tAditivo, this.tGasolina, this.tAlcool1, this.tAlcool2};
+		}
+		return new int {-21};
 	}
 
 
