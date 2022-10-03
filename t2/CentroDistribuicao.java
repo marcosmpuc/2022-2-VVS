@@ -1,3 +1,5 @@
+package 2022-2-VVS;
+
 public class CentroDistribuicao {
 
 	// REVISAR
