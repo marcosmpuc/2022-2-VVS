@@ -24,7 +24,7 @@ public class CentroDistribuicao {
 			|| tGasolina < 0
 			|| tAlcool1 < 0	// não é necessário verificar as duas; para dar erro: ou as duas são iguais, e as duas são negativas; ou as duas são diferentes, não importando se são > 0 ou < 0
 			|| tAlcool1 != tAlcool2)
-			throw ILLEGAL_ARGUMENT_EXCEPTION;
+			throw new ILLEGAL_ARGUMENT_EXCEPTION("Algum argumento fornecido é inválido (menor que 0)");
 		this.tAditivo = tAditivo;
 		this.tGasolina = tGasolina;
 		this.tAlcool1 = tAlcool1;
@@ -97,6 +97,7 @@ public class CentroDistribuicao {
 				}
 			}
 		}
+		return output;
 	}
 
 	public int[] entregaNPorCento(int qtdade, int n){
@@ -133,5 +134,6 @@ public class CentroDistribuicao {
 			int[] output = {tanque - quantidadeDesejada, quantidadeDesejada};
 			return output;
 		}
+		return null;
 	}
 }
