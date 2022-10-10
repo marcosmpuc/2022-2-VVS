@@ -1,5 +1,6 @@
-package verivaltrab;
+package trabDoOutroGrupo.src.test.java.trab;
 
+import trabDoOutroGrupo.src.main.java.trab.CentroDistribuicao;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
