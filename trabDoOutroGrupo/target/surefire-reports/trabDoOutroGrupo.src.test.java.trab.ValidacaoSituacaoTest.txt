@@ -1,0 +1,170 @@
+-------------------------------------------------------------------------------
+Test set: trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest
+-------------------------------------------------------------------------------
+Tests run: 61, Failures: 34, Errors: 0, Skipped: 0, Time elapsed: 0.176 s <<< FAILURE! - in trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest
+quantidadeValidaGasolinaOnPointMin  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception thrown: java.lang.IllegalArgumentException: Valor negativo ou zero não suportado
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeValidaGasolinaOnPointMin(ValidacaoSituacaoTest.java:164)
+Caused by: java.lang.IllegalArgumentException: Valor negativo ou zero não suportado
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.lambda$quantidadeValidaGasolinaOnPointMin$21(ValidacaoSituacaoTest.java:165)
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeValidaGasolinaOnPointMin(ValidacaoSituacaoTest.java:164)
+
+quantidadeInvalidaAlcoolInPointMax  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected trabDoOutroGrupo.src.main.java.trab.ILLEGAL_ARGUMENT_EXCEPTION to be thrown, but nothing was thrown.
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaAlcoolInPointMax(ValidacaoSituacaoTest.java:52)
+
+quantidadeInvalidaAlcoolInPointMin  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <trabDoOutroGrupo.src.main.java.trab.ILLEGAL_ARGUMENT_EXCEPTION> but was: <java.lang.IllegalArgumentException>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaAlcoolInPointMin(ValidacaoSituacaoTest.java:91)
+Caused by: java.lang.IllegalArgumentException: Valor negativo ou zero não suportado
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.lambda$quantidadeInvalidaAlcoolInPointMin$11(ValidacaoSituacaoTest.java:92)
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaAlcoolInPointMin(ValidacaoSituacaoTest.java:91)
+
+quantidadeValidaAlcoolOnPointMin  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception thrown: java.lang.IllegalArgumentException: Valor negativo ou zero não suportado
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeValidaAlcoolOnPointMin(ValidacaoSituacaoTest.java:176)
+Caused by: java.lang.IllegalArgumentException: Valor negativo ou zero não suportado
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.lambda$quantidadeValidaAlcoolOnPointMin$23(ValidacaoSituacaoTest.java:177)
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeValidaAlcoolOnPointMin(ValidacaoSituacaoTest.java:176)
+
+quantidadeInvalidaAlcoolOffPointMax  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected trabDoOutroGrupo.src.main.java.trab.ILLEGAL_ARGUMENT_EXCEPTION to be thrown, but nothing was thrown.
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaAlcoolOffPointMax(ValidacaoSituacaoTest.java:46)
+
+quantidadeInvalidaAlcoolOffPointMin  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <trabDoOutroGrupo.src.main.java.trab.ILLEGAL_ARGUMENT_EXCEPTION> but was: <java.lang.IllegalArgumentException>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaAlcoolOffPointMin(ValidacaoSituacaoTest.java:85)
+Caused by: java.lang.IllegalArgumentException: Valor negativo ou zero não suportado
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.lambda$quantidadeInvalidaAlcoolOffPointMin$10(ValidacaoSituacaoTest.java:86)
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaAlcoolOffPointMin(ValidacaoSituacaoTest.java:85)
+
+emergenciaAlcoolInPoint  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <EMERGENCIA> but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.emergenciaAlcoolInPoint(ValidacaoSituacaoTest.java:388)
+
+sobravisoGasolinaInPoint  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <SOBRAVISO> but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.sobravisoGasolinaInPoint(ValidacaoSituacaoTest.java:294)
+
+quantidadeValidaAditivoOnPointMin  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception thrown: java.lang.IllegalArgumentException: Valor negativo ou zero não suportado
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeValidaAditivoOnPointMin(ValidacaoSituacaoTest.java:152)
+Caused by: java.lang.IllegalArgumentException: Valor negativo ou zero não suportado
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.lambda$quantidadeValidaAditivoOnPointMin$19(ValidacaoSituacaoTest.java:153)
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeValidaAditivoOnPointMin(ValidacaoSituacaoTest.java:152)
+
+normalAlcoolOffPoint  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not equal but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.normalAlcoolOffPoint(ValidacaoSituacaoTest.java:251)
+
+emergenciaAlcoolOnPoint  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <EMERGENCIA> but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.emergenciaAlcoolOnPoint(ValidacaoSituacaoTest.java:383)
+
+emergenciaAditivoInPoint  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <EMERGENCIA> but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.emergenciaAditivoInPoint(ValidacaoSituacaoTest.java:342)
+
+quantidadeDiferenteAlcool  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <trabDoOutroGrupo.src.main.java.trab.ILLEGAL_ARGUMENT_EXCEPTION> but was: <java.lang.IllegalArgumentException>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeDiferenteAlcool(ValidacaoSituacaoTest.java:100)
+Caused by: java.lang.IllegalArgumentException: Os valores de Alcool devem ser iguais
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.lambda$quantidadeDiferenteAlcool$12(ValidacaoSituacaoTest.java:101)
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeDiferenteAlcool(ValidacaoSituacaoTest.java:100)
+
+sobravisoGasolinaOnPoint  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <SOBRAVISO> but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.sobravisoGasolinaOnPoint(ValidacaoSituacaoTest.java:289)
+
+sobravisoAlcoolInPoint  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <SOBRAVISO> but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.sobravisoAlcoolInPoint(ValidacaoSituacaoTest.java:317)
+
+emergenciaGasolinaInPoint  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <EMERGENCIA> but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.emergenciaGasolinaInPoint(ValidacaoSituacaoTest.java:365)
+
+normalAlcoolOutPoint  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not equal but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.normalAlcoolOutPoint(ValidacaoSituacaoTest.java:256)
+
+normalAditivoOffPoint  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not equal but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.normalAditivoOffPoint(ValidacaoSituacaoTest.java:205)
+
+emergenciaAditivoOnPoint  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <EMERGENCIA> but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.emergenciaAditivoOnPoint(ValidacaoSituacaoTest.java:337)
+
+quantidadeInvalidaGasolinaInPointMax  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected trabDoOutroGrupo.src.main.java.trab.ILLEGAL_ARGUMENT_EXCEPTION to be thrown, but nothing was thrown.
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaGasolinaInPointMax(ValidacaoSituacaoTest.java:40)
+
+quantidadeInvalidaGasolinaInPointMin  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <trabDoOutroGrupo.src.main.java.trab.ILLEGAL_ARGUMENT_EXCEPTION> but was: <java.lang.IllegalArgumentException>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaGasolinaInPointMin(ValidacaoSituacaoTest.java:79)
+Caused by: java.lang.IllegalArgumentException: Valor negativo ou zero não suportado
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.lambda$quantidadeInvalidaGasolinaInPointMin$9(ValidacaoSituacaoTest.java:80)
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaGasolinaInPointMin(ValidacaoSituacaoTest.java:79)
+
+sobravisoAditivoInPoint  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <SOBRAVISO> but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.sobravisoAditivoInPoint(ValidacaoSituacaoTest.java:271)
+
+sobravisoAlcoolOnPoint  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <SOBRAVISO> but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.sobravisoAlcoolOnPoint(ValidacaoSituacaoTest.java:312)
+
+emergenciaGasolinaOnPoint  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <EMERGENCIA> but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.emergenciaGasolinaOnPoint(ValidacaoSituacaoTest.java:360)
+
+normalAditivoOutPoint  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not equal but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.normalAditivoOutPoint(ValidacaoSituacaoTest.java:210)
+
+quantidadeInvalidaGasolinaOffPointMax  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected trabDoOutroGrupo.src.main.java.trab.ILLEGAL_ARGUMENT_EXCEPTION to be thrown, but nothing was thrown.
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaGasolinaOffPointMax(ValidacaoSituacaoTest.java:34)
+
+quantidadeInvalidaGasolinaOffPointMin  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <trabDoOutroGrupo.src.main.java.trab.ILLEGAL_ARGUMENT_EXCEPTION> but was: <java.lang.IllegalArgumentException>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaGasolinaOffPointMin(ValidacaoSituacaoTest.java:73)
+Caused by: java.lang.IllegalArgumentException: Valor negativo ou zero não suportado
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.lambda$quantidadeInvalidaGasolinaOffPointMin$8(ValidacaoSituacaoTest.java:74)
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaGasolinaOffPointMin(ValidacaoSituacaoTest.java:73)
+
+normalGasolinaOffPoint  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not equal but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.normalGasolinaOffPoint(ValidacaoSituacaoTest.java:228)
+
+quantidadeInvalidaAditivoInPointMax  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected trabDoOutroGrupo.src.main.java.trab.ILLEGAL_ARGUMENT_EXCEPTION to be thrown, but nothing was thrown.
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaAditivoInPointMax(ValidacaoSituacaoTest.java:28)
+
+quantidadeInvalidaAditivoInPointMin  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <trabDoOutroGrupo.src.main.java.trab.ILLEGAL_ARGUMENT_EXCEPTION> but was: <java.lang.IllegalArgumentException>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaAditivoInPointMin(ValidacaoSituacaoTest.java:67)
+Caused by: java.lang.IllegalArgumentException: Valor negativo ou zero não suportado
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.lambda$quantidadeInvalidaAditivoInPointMin$7(ValidacaoSituacaoTest.java:68)
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaAditivoInPointMin(ValidacaoSituacaoTest.java:67)
+
+sobravisoAditivoOnPoint  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <SOBRAVISO> but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.sobravisoAditivoOnPoint(ValidacaoSituacaoTest.java:266)
+
+quantidadeInvalidaAditivoOffPointMax  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected trabDoOutroGrupo.src.main.java.trab.ILLEGAL_ARGUMENT_EXCEPTION to be thrown, but nothing was thrown.
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaAditivoOffPointMax(ValidacaoSituacaoTest.java:22)
+
+quantidadeInvalidaAditivoOffPointMin  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <trabDoOutroGrupo.src.main.java.trab.ILLEGAL_ARGUMENT_EXCEPTION> but was: <java.lang.IllegalArgumentException>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaAditivoOffPointMin(ValidacaoSituacaoTest.java:61)
+Caused by: java.lang.IllegalArgumentException: Valor negativo ou zero não suportado
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.lambda$quantidadeInvalidaAditivoOffPointMin$6(ValidacaoSituacaoTest.java:62)
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.quantidadeInvalidaAditivoOffPointMin(ValidacaoSituacaoTest.java:61)
+
+normalGasolinaOutPoint  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not equal but was: <NORMAL>
+	at trabDoOutroGrupo.src.test.java.trab.ValidacaoSituacaoTest.normalGasolinaOutPoint(ValidacaoSituacaoTest.java:233)
+

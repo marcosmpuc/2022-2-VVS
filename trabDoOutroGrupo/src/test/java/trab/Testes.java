@@ -1,6 +1,7 @@
 package trabDoOutroGrupo.src.test.java.trab;
 import trabDoOutroGrupo.src.main.java.trab.CentroDistribuicao;
 
+
 public class Testes {
     public static void main(String args[]){
         normalAditivoOnPoint();

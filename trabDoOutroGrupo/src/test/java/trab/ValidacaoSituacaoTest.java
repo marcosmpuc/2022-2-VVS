@@ -1,6 +1,7 @@
 package trabDoOutroGrupo.src.test.java.trab;
 
 import trabDoOutroGrupo.src.main.java.trab.CentroDistribuicao;
+import trabDoOutroGrupo.src.main.java.trab.ILLEGAL_ARGUMENT_EXCEPTION;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,37 +19,37 @@ class ValidacaoSituacaoTest {
     // x>500    x>1250    X>10000
     @Test
     void quantidadeInvalidaAditivoOffPointMax(){
-        assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(ILLEGAL_ARGUMENT_EXCEPTION.class, () -> {
             CentroDistribuicao centroDistribuicaoTeste = new CentroDistribuicao(501, 10000, 1250, 1250);
         });
     }
     @Test
     void quantidadeInvalidaAditivoInPointMax(){
-        assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(ILLEGAL_ARGUMENT_EXCEPTION.class, () -> {
             CentroDistribuicao centroDistribuicaoTeste = new CentroDistribuicao(510, 10000, 1250, 1250);
         });
     }
     @Test
     void quantidadeInvalidaGasolinaOffPointMax(){
-        assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(ILLEGAL_ARGUMENT_EXCEPTION.class, () -> {
             CentroDistribuicao centroDistribuicaoTeste = new CentroDistribuicao(500, 10001, 1250, 1250);
         });
     }
     @Test
     void quantidadeInvalidaGasolinaInPointMax(){
-        assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(ILLEGAL_ARGUMENT_EXCEPTION.class, () -> {
             CentroDistribuicao centroDistribuicaoTeste = new CentroDistribuicao(500, 10010, 1250, 1250);
         });
     }
     @Test
     void quantidadeInvalidaAlcoolOffPointMax(){
-        assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(ILLEGAL_ARGUMENT_EXCEPTION.class, () -> {
             CentroDistribuicao centroDistribuicaoTeste = new CentroDistribuicao(500, 10000, 1251, 1251);
         });
     }
     @Test
     void quantidadeInvalidaAlcoolInPointMax(){
-        assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(ILLEGAL_ARGUMENT_EXCEPTION.class, () -> {
             CentroDistribuicao centroDistribuicaoTeste = new CentroDistribuicao(500, 10000, 2000, 2000);
         });
     }
@@ -57,37 +58,37 @@ class ValidacaoSituacaoTest {
     //region Teste valor MIN
     @Test
     void quantidadeInvalidaAditivoOffPointMin(){ // ADITIVO
-        assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(ILLEGAL_ARGUMENT_EXCEPTION.class, () -> {
             CentroDistribuicao centroDistribuicaoTeste = new CentroDistribuicao(-1, 10000, 1250, 1250);
         });
     }
     @Test
     void quantidadeInvalidaAditivoInPointMin(){ // ADITIVO
-        assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(ILLEGAL_ARGUMENT_EXCEPTION.class, () -> {
             CentroDistribuicao centroDistribuicaoTeste = new CentroDistribuicao(-10, 10000, 1250, 1250);
         });
     }
     @Test
     void quantidadeInvalidaGasolinaOffPointMin(){ // GASOLINA
-        assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(ILLEGAL_ARGUMENT_EXCEPTION.class, () -> {
             CentroDistribuicao centroDistribuicaoTeste = new CentroDistribuicao(500, -1, 1250, 1250);
         });
     }
     @Test
     void quantidadeInvalidaGasolinaInPointMin(){ // GASOLINA
-        assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(ILLEGAL_ARGUMENT_EXCEPTION.class, () -> {
             CentroDistribuicao centroDistribuicaoTeste = new CentroDistribuicao(500, -10, 1250, 1250);
         });
     }
     @Test
     void quantidadeInvalidaAlcoolOffPointMin(){ // ALCOOL
-        assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(ILLEGAL_ARGUMENT_EXCEPTION.class, () -> {
             CentroDistribuicao centroDistribuicaoTeste = new CentroDistribuicao(500, 10000, -1, -1);
         });
     }
     @Test
     void quantidadeInvalidaAlcoolInPointMin(){ // ALCOOL
-        assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(ILLEGAL_ARGUMENT_EXCEPTION.class, () -> {
             CentroDistribuicao centroDistribuicaoTeste = new CentroDistribuicao(500, 10000, -10, -10);
         });
     }
@@ -96,7 +97,7 @@ class ValidacaoSituacaoTest {
     //region Teste quantidade diferete de alcool
     @Test
     void quantidadeDiferenteAlcool(){ // ALCOOL
-        assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(ILLEGAL_ARGUMENT_EXCEPTION.class, () -> {
             CentroDistribuicao centroDistribuicaoTeste = new CentroDistribuicao(500, 10000, 1000, 1250);
         });
     }
